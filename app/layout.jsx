@@ -1,4 +1,5 @@
 import {useNonce, Analytics} from '@shopify/hydrogen';
+import {Seo} from '@shopify/hydrogen';
 import {
   Links,
   Meta,
@@ -18,6 +19,7 @@ export default function Layout() {
   return (
     <html lang="en">
       <head>
+        <Seo />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="stylesheet" href={resetStyles}></link>

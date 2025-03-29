@@ -92,6 +92,10 @@ function CollectionItem({collection, index}) {
         />
       )}
       <h5>{collection.title}</h5>
+      <details>
+        <summary>View Collection</summary>
+        <p>{collection.description}</p>
+      </details>
     </Link>
   );
 }
@@ -108,6 +112,7 @@ const COLLECTIONS_QUERY = `#graphql
       width
       height
     }
+    description
   }
   query StoreCollections(
     $country: CountryCode
